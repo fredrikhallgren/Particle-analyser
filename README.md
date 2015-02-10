@@ -1,2 +1,4 @@
 # Particle-analyser
 A BMP sensor and Grove Dust sensor powered by Electric IMP
+
+Have put together a grove dust sensor (Shinyei PPD 42NS) and BMP sensor to measure particles, atmospheric pressure and temperature. Data is saved at data.sparkfun.com. The particle sensor is not the most accurate but it track changes in particle amount fairly well. I simplified the code to count only the number of low pulses. This is done on pin 1 since that is the only pin that could handle counts. The code is a mix of different sources, you need to set up your own stream at sparkfun and include the keys in the agent code. Will try to find time to make it a mobile solution, for now it is sitting on the wall in my living room and is maybe not yet a pieco of art to look at ;) For the BMP sensor I use pin 8 and 9 for I2C since pin 1 is occupied by the particle sensor. Link to the stream for my measurements: https://data.sparkfun.com/streams/0lQrbrVvnzfO8aJ6j0WD
